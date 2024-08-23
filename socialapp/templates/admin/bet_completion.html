@@ -1,0 +1,14 @@
+{% extends 'admin/base_site.html' %}
+
+{% block content %}
+  <form action="{{ path }}" method="post">
+    {% csrf_token %}
+        <h1>{{ bet.text }}</h1>
+        <h2>{{ bet.pk }}</h2>
+          <input type="hidden" name="bet_id" value="{{ bet.id }}" />
+
+
+    {{ form.as_p }}
+    <input type="submit" name="send" value="Submit">
+  </form>
+{% endblock %}
