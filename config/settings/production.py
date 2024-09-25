@@ -9,7 +9,7 @@ from .base import env
 # https://docs.djangoproject.com/en/dev/ref/settings/#secret-key
 SECRET_KEY = env("DJANGO_SECRET_KEY")
 # https://docs.djangoproject.com/en/dev/ref/settings/#allowed-hosts
-CORS_ALLOWED_ORIGINS = ["https://socialapp.vercel.app"]
+CORS_ALLOWED_ORIGINS = ["https://social-app-iota-six.vercel.app"]
 ALLOWED_HOSTS = env.list("DJANGO_ALLOWED_HOSTS")
 
 # DATABASES
